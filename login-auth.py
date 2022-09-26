@@ -1,7 +1,4 @@
-import os
 import random
-
-folder = os.path.exists
 
 user = input("Set your username: ")
 password = input("Set your password: ")
