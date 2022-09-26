@@ -2,10 +2,14 @@ import hashlib
 import os
 import random
 
+
 def md5(input):
     return hashlib.md5(input.encode()).hexdigest().strip()
+
+
 def hash_int(input):
     return int(hash(input))
+
 
 pathT = os.getcwd() + "/data"
 
@@ -44,7 +48,7 @@ while not success:
         break
     else:
         print("Username of password is wrong!")
-    
+
     if count > random.randint(3, 5):
         print("Tried too many times!")
         break
